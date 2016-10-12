@@ -1,28 +1,107 @@
-<link rel="stylesheet" href="/data/kojika_files/pws/1506-page-styles/ps1606_jijiblog_rensai.min.css?555837" />
-<div class="psb-excerpt-title">Internet Explorerの「お気に入りをUbuntuのFireFoxに取り込む</div>
+<div class="psb-before-excerpt">————————————————————————</div>
+<div class="psb-excerpt-title">Internet Explorerの「お気に入り」をFireFoxに取り込む</div>
 <div class="psb-excerpt-content">
 
-<section class="satoub-section">
-<h1>今回の記事の流れ</h1>
-</section>
+ブラウザにはよく参照するサイトを登録する機能、ブックマーク（Internet Explorerでは「お気に入り」）があります。Ubuntu上のFireFoxは快適ですが、また一からブックマークを登録すると考えるとちょっとうんざりしますね。今回の記事は、Internet Explorerのお気に入りをUbuntu上のFireFoxに取り込むという、ちょっと魔法のような手順をご紹介します。この手順は、前回作成したWindowsとUbuntuをつなぐ「共有フォルダ」を利用するので、それを登録してからお読みください。
 
-<section class="satoub-section">
 <h1>Windowsでの作業</h1>
-</section>
 
-<section class="satoub-section">
+WindowsでInternet Explorerを起動します。
+
+<a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-09_21h51_02.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-09_21h51_02-480x279.png" alt="2016-10-09_21h51_02" width="480" height="279" class="aligncenter size-medium wp-image-118275" /></a>
+
+メニューバーの「お気に入り」の内容を確認します。ここで表示される内容をUbuntuのFireFoxに引っ越します。
+
+<a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-09_21h51_37.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-09_21h51_37-480x279.png" alt="2016-10-09_21h51_37" width="480" height="279" class="aligncenter size-medium wp-image-118276" /></a>
+
+「お気に入り」の引っ越しを行う方法は複数ありますが、本記事では、Windows上のFireFoxを経由する方法を説明します。Internet Explorerは、Windows専用ですが、FireFoxは、Ubuntuだけでなく、Windowsにも対応しています。<a href="https://www.mozilla.org/ja/firefox/new/">FireFoxダウンロードのサイト</a>を開きます。
+
+<a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-09_21h54_07.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-09_21h54_07-480x279.png" alt="2016-10-09_21h54_07" width="480" height="279" class="aligncenter size-medium wp-image-118277" /></a>
+
+力強く「無料ダウンロード」をクリックください。
+
+<a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-09_21h54_46.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-09_21h54_46-480x279.png" alt="2016-10-09_21h54_46" width="480" height="279" class="aligncenter size-medium wp-image-118278" /></a>
+
+ダウンロードを選択して、終了後実行します（Windowsのいつもの手順です）。
+
+<a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-09_21h57_35.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-09_21h57_35-480x279.png" alt="2016-10-09_21h57_35" width="480" height="279" class="aligncenter size-medium wp-image-118279" /></a>
+
+インストーラの画面が表示されましたら、「インストール」をクリックします。
+
+<a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-09_22h37_18.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-09_22h37_18-480x279.png" alt="2016-10-09_22h37_18" width="480" height="279" class="aligncenter size-medium wp-image-118280" /></a>
+
+ファイルのコピーなどインストールが始まりますが、途中で、「設定移行ウィザード」が表示されます。
+
+<a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-09_22h48_13.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-09_22h48_13-480x386.png" alt="2016-10-09_22h48_13" width="480" height="386" class="aligncenter size-medium wp-image-118282" /></a>
+
+上の画面のように"Microsoft Internet Explorer"をチェックして、「次へ」をクリックします。
+
+<a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-09_22h48_47.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-09_22h48_47-480x386.png" alt="2016-10-09_22h48_47" width="480" height="386" class="aligncenter size-medium wp-image-118283" /></a>
+
+すると次に「ホームページも移行するか」と聞かれます。Internet Explorerに登録してあるホームページを引き継ぎたい場合は、上の画面のようにチェックください。
+
+<a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-09_22h49_01.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-09_22h49_01-480x386.png" alt="2016-10-09_22h49_01" width="480" height="386" class="aligncenter size-medium wp-image-118284" /></a>
+
+FireFoxは、Internet Explorerのお気に入りの内容とホームページ（指定した場合）を探して、Windows上のFireFoxに取り込みます。移行が完了して、Windows用のFireFoxが起動しましたら、画面のように星印の右となりにあるアイコンをクリックして、ブックマークの内容を確認します。Internet Explorerのお気に入りが表示されています。
+
+<a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-09_23h19_21.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-09_23h19_21-480x288.png" alt="2016-10-09_23h19_21" width="480" height="288" class="aligncenter size-medium wp-image-118285" /></a>
+
+では、Windows上のFireFoxのブックマークを書き出しましょう。上の画面の「すべてのブックマークの表示」をクリックすると、「ブックマークの履歴と管理」の設定画面が表示されます。
+
+<a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-09_23h19_42.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-09_23h19_42-480x319.png" alt="2016-10-09_23h19_42" width="480" height="319" class="aligncenter size-medium wp-image-118286" /></a>
+
+メニューバーで「インポートとバックアップ」を表示し、「バックアップ」をクリックします。
+
+<a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-09_23h21_06.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-09_23h21_06-480x300.png" alt="2016-10-09_23h21_06" width="480" height="300" class="aligncenter size-medium wp-image-118287" /></a>
+
+するとブックマークの内容を保存するファイル名の入力が求められます。ここで、保存先のフォルダは前回の記事で作成した共有フォルダを選択、ファイル名は表示されているままで結構です。
+
+Windowsでの作業は以上です。ここでなぜWindows上にFireFoxをインストールしたか説明します。FireFoxやUbuntu上のメールソフト、Thunderbirdは前述のようにLinuxの他にWindowsにも対応しています。Linux版とWindows版は、見た目や機能が一部異なりますが、基本的な機能は同じです。そこで、FireFoxの持つブックマークの書き出し（エキスポート）と読み込み（インポート）の機能を組み合わせ、「共有フォルダ」を介して、Windows用のFireFoxのブックマークをUbuntu上のFireFoxに取り込もうというわけです。
+
 <h1>Ubuntuでの作業</h1>
-</section>
 
+"Oracle VM VirtualBoxマネージャ"からUbuntuを起動します。Windowsにおけるエクスプローラに相当する左上から2番目のキャビネットのアイコンをクリックして、「sf_UbuntuPortal」を選択します。前回の記事で紹介した共有フォルダが正しく登録されていれば、Windows上のFireFoxで書き出したファイルがそこに見えるはずです。
 
-<section class="satoub-section">
-<h1></h1>
-</section>
+<a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-10_00h32_49.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-10_00h32_49-480x318.png" alt="2016-10-10_00h32_49" width="480" height="318" class="aligncenter size-medium wp-image-118288" /></a>
 
-<div class="satoub-column">
-</div>
- 
+察しがついた方がいらっしゃると思いますが、ここからの作業は、Windows上のFireFoxで行った操作を鏡のように反転します。まずは、星印の右隣のアイコンで、お気に入りを表示、一番下の「すべてのブックマークの表示」をクリックします。
+
+<a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-10_00h33_42.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-10_00h33_42-480x270.png" alt="2016-10-10_00h33_42" width="480" height="270" class="aligncenter size-medium wp-image-118289" /></a>
+
+メニューバーで「インポートとバックアップ」を表示し、今度は「復元（リストア）」をクリックします。ここで重要なのは、「復元」は「インポート」と対の機能であることです。
+
+<a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-10_00h53_41.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-10_00h53_41-480x323.png" alt="2016-10-10_00h53_41" width="480" height="323" class="aligncenter size-medium wp-image-118290" /></a>
+
+上の図では、記事執筆前に作成したファイル名が表示されていますが、読者の方の画面には一番下の「ファイルを選択」のみが見えているはずです。それをクリックします。
+
+<a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-10_00h54_01.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-10_00h54_01-480x323.png" alt="2016-10-10_00h54_01" width="480" height="323" class="aligncenter size-medium wp-image-118291" /></a>
+
+復元を行うファイルの場所と名前を聞かれますから、「sf_UbuntuPortal」に保存されたファイルを指定します。
+
+<a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-10_00h54_21.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-10_00h54_21-480x323.png" alt="2016-10-10_00h54_21" width="480" height="323" class="aligncenter size-medium wp-image-118292" /></a>
+
+「現在のブックマークはすべてバックアップで置き換えられます。本当に復元しますか？」と確認を求められます。Ubuntu上では自分で登録したブックマークはないはずなので、「OK」をクリックします。
+
+<a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-10_00h54_38.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-10_00h54_38-480x323.png" alt="2016-10-10_00h54_38" width="480" height="323" class="aligncenter size-medium wp-image-118293" /></a>
+
+「履歴とブックマークの管理」の画面に戻りますので、「ブックマークメニュー」をクリックしてみてください。
+
+<a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-10_00h55_06.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-10_00h55_06-480x323.png" alt="2016-10-10_00h55_06" width="480" height="323" class="aligncenter size-medium wp-image-118294" /></a>
+
+そこには、Internet Explorerのお気に入りの内容が表示されているはずです。確認しましたら、ウィンドウ左上の×印をクリックして閉じてください。
+
+<a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-10_00h58_28.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-10_00h58_28-480x323.png" alt="2016-10-10_00h58_28" width="480" height="323" class="aligncenter size-medium wp-image-118295" /></a>
+
+再び、星印右隣のアイコンをクリックしてみましょう。「お気に入り」の内容がFireFoxのブックマークとして表示されているはずです。
+
+<a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-10_00h59_15.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-10_00h59_15-480x323.png" alt="2016-10-10_00h59_15" width="480" height="323" class="aligncenter size-medium wp-image-118296" /></a>
+
+本当に引き継がれているか確認します。ここでは、スタッフブログをクリックしてみましょう。
+
+<a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-10_01h00_09.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-10_01h00_09-480x323.png" alt="2016-10-10_01h00_09" width="480" height="323" class="aligncenter size-medium wp-image-118297" /></a>
+
+期待した通り、スタッフブログが表示されました。
+
 （Haru）
 </div>
 <div class="psb-after-excerpt"></div>
-[contentblock id=1606-satoub-profile]
