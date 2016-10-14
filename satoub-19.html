@@ -1,9 +1,10 @@
+<link rel="stylesheet" href="/data/kojika_files/pws/1506-page-styles/ps1606_jijiblog_rensai.min.css" />
 <div class="psb-before-excerpt">————————————————————————</div>
 <div class="psb-excerpt-title">Internet Explorerの「お気に入り」をFireFoxに取り込む</div>
 <div class="psb-excerpt-content">
-
 ブラウザにはよく参照するサイトを登録する機能、ブックマーク（Internet Explorerでは「お気に入り」）があります。Ubuntu上のFireFoxは快適ですが、また一からブックマークを登録すると考えるとちょっとうんざりしますね。今回の記事は、Internet Explorerのお気に入りをUbuntu上のFireFoxに取り込むという、ちょっと魔法のような手順をご紹介します。この手順は、<a href="https://shanti-phula.net/ja/social/blog/?p=117835">前回</a>作成したWindowsとUbuntuをつなぐ「共有フォルダ」を利用するので、それを登録してからお読みください。
 
+<section class="satoub-section">
 <h1>Windowsでの作業</h1>
 
 WindowsでInternet Explorerを起動します。
@@ -13,6 +14,8 @@ WindowsでInternet Explorerを起動します。
 メニューバーの「お気に入り」の内容を確認します。ここで表示される内容をUbuntuのFireFoxに引っ越します。
 
 <a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-09_21h51_371.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-09_21h51_371-480x159.png" alt="2016-10-09_21h51_37" width="480" height="159" class="aligncenter size-medium wp-image-118476" /></a>
+
+<h2>Windows用Firefoxのインストール</h2>
 
 「お気に入り」の引っ越しを行う方法は複数ありますが、本記事では、Windows上のFireFoxを経由する方法を説明します。Internet Explorerは、Windows専用ですが、FireFoxは、Ubuntuだけでなく、Windowsにも対応しています。<a href="https://www.mozilla.org/ja/firefox/new/">FireFoxダウンロードのサイト</a>を開きます。
 
@@ -42,7 +45,11 @@ WindowsでInternet Explorerを起動します。
 
 <a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-09_22h49_01.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-09_22h49_01-480x386.png" alt="2016-10-09_22h49_01" width="480" height="386" class="aligncenter size-medium wp-image-118284" /></a>
 
-FireFoxは、Internet Explorerのお気に入りの内容とホームページ（指定した場合）を探して、Windows上のFireFoxに取り込みます。移行が完了して、Windows用のFireFoxが起動しましたら、画面のように星印の右となりにあるアイコンをクリックして、ブックマークの内容を確認します。Internet Explorerのお気に入りが表示されています。
+FireFoxは、Internet Explorerのお気に入りの内容とホームページ（指定した場合）を探して、Windows上のFireFoxに取り込みます。
+
+<h2>Firefoxからのブックマークの書き出し</h2>
+
+移行が完了して、Windows用のFireFoxが起動しましたら、画面のように星印の右となりにあるアイコンをクリックして、ブックマークの内容を確認します。Internet Explorerのお気に入りが表示されています。
 
 <a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-09_23h19_211.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-09_23h19_211-480x288.png" alt="2016-10-09_23h19_21" width="480" height="288" class="aligncenter size-medium wp-image-118477" /></a>
 
@@ -57,12 +64,16 @@ FireFoxは、Internet Explorerのお気に入りの内容とホームページ�
 するとブックマークの内容を保存するファイル名の入力が求められます。ここで、保存先のフォルダは<a href="https://shanti-phula.net/ja/social/blog/?p=117835">前回の記事</a>で作成した共有フォルダを選択、ファイル名は表示されているままで結構です。
 
 Windowsでの作業は以上です。ここでなぜWindows上にFireFoxをインストールしたか説明します。FireFoxやUbuntu上のメールソフト、Thunderbirdは前述のようにLinuxの他にWindowsにも対応したバージョンが提供されています。Linux版とWindows版は、見た目や機能が一部異なりますが、基本的な機能は同じです。そこで、FireFoxの持つブックマークの書き出し（エキスポート）と読み込み（インポート）の機能を組み合わせ、「共有フォルダ」を介して、Windows用のFireFoxのブックマークをUbuntu上のFireFoxに取り込もうというわけです。
+</section>
 
+<section class="satoub-section">
 <h1>Ubuntuでの作業</h1>
 
 "Oracle VM VirtualBoxマネージャ"からUbuntuを起動します。Windowsにおけるエクスプローラに相当する左上から2番目のキャビネットのアイコンをクリックして、「sf_UbuntuPortal」を選択します。<a href="https://shanti-phula.net/ja/social/blog/?p=117835">前回の記事</a>で紹介した共有フォルダが正しく登録されていれば、Windows上のFireFoxで書き出したファイルがそこに見えるはずです。
 
 <a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-10_00h32_491.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-10_00h32_491-480x318.png" alt="2016-10-10_00h32_49" width="480" height="318" class="aligncenter size-medium wp-image-118482" /></a>
+
+<h2>UbuntuのFirefoxへブックマークを取り込む</h2>
 
 察しがついた方がいらっしゃると思いますが、ここからの作業は、Windows上のFireFoxで行った操作を鏡のように反転します。まずは、星印の右隣のアイコンで、お気に入りを表示、一番下の「すべてのブックマークの表示」をクリックします。
 
@@ -84,6 +95,8 @@ Windowsでの作業は以上です。ここでなぜWindows上にFireFoxをイ�
 
 <a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-10_00h54_381.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-10_00h54_381-480x264.png" alt="2016-10-10_00h54_38" width="480" height="264" class="aligncenter size-medium wp-image-118488" /></a>
 
+<h2>引っ越した「お気に入り」を確認する</h2>
+
 「履歴とブックマークの管理」の画面に戻りますので、「ブックマークメニュー」をクリックしてみてください。
 
 <a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-10_00h58_281.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-10_00h58_281-480x222.png" alt="2016-10-10_00h58_28" width="480" height="222" class="aligncenter size-medium wp-image-118490" /></a>
@@ -101,7 +114,10 @@ Windowsでの作業は以上です。ここでなぜWindows上にFireFoxをイ�
 <a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-10_01h00_09.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-10_01h00_09-480x323.png" alt="2016-10-10_01h00_09" width="480" height="323" class="aligncenter size-medium wp-image-118297" /></a>
 
 期待した通り、スタッフブログが表示されました。（めでたしめでたし）
+</section>
 
 （Haru）
+
+[contentblock id=1606-satoub-profile]
 </div>
 <div class="psb-after-excerpt"></div>
