@@ -1,56 +1,59 @@
+<link rel="stylesheet" href="/data/kojika_files/pws/1506-page-styles/ps1606_jijiblog_rensai.min.css" />
 <div class="psb-before-excerpt">————————————————————————</div>
 <div class="psb-excerpt-title">仮想マシンのハードディスク容量について</div>
 <div class="psb-excerpt-content">
-
-おかげさまで里山Ubuntu通信も20回目を迎えました。いつもおつきあいいただきありがとうございます。この連載は、私のパソコンで動作を確認した内容を記事として紹介しているのですが、あるとき仮想マシンにインストールしたUbuntuを立ち上げたところ、「ディスクの空き容量が少ない」というタイトルのウィンドウが表示されました。
+おかげさまで里山Ubuntu通信も20回目を迎えました。いつもおつきあいいただきありがとうございます。この連載は、私のパソコンで動作を確認した内容を記事として紹介しているのですが、[red]あるとき[/red]仮想マシンにインストールした[red]Ubuntuを立ち上げたところ、「ディスクの空き容量が少ない」という[/red]タイトルの[red]ウィンドウが表示されました。[/red]
 
 <a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-20_21h58_16.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-20_21h58_16-480x354.png" alt="2016-10-20_21h58_16" width="480" height="354" class="aligncenter size-medium wp-image-118770" /></a>
 
-仮想マシンの作成については、<a href="https://shanti-phula.net/ja/social/blog/?p=115672">13日目　仮想化環境へのインストール</a>で説明しています。その際にメモリの量についてはガイドラインを紹介しましたが、ハードディスクの容量は"Oracle VM VirtualBoxマネージャ"の標準設定（デフォルト）のまま変更せず、設定値の目安についても触れていませんでした。あらためて"Oracle VM VirtualBoxマネージャ"の画面で確認しますと、デフォルトの値は8GBとなっています。連載の題材を考えながら実験しているうちに、残り容量が少なくなってしまったようです。
+[red]仮想マシンの作成について[/red]は、<a href="https://shanti-phula.net/ja/social/blog/?p=115672">13日目　仮想化環境へのインストール</a>で説明しています。その際にメモリの量についてはガイドラインを紹介しましたが、[red]ハードディスクの容量は[/red]"Oracle VM VirtualBoxマネージャ"の標準設定（デフォルト）のまま変更せず、設定値の目安についても触れていませんでした。あらためて"Oracle VM VirtualBoxマネージャ"の画面で確認しますと、[red]デフォルトの値は8GBとなっています。[/red]連載の題材を考えながら実験しているうちに、[red]残り容量が少なくなってしまったようです。[/red]
 
 <a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-20_21h48_33.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-20_21h48_33-480x347.png" alt="2016-10-20_21h48_33" width="480" height="347" class="aligncenter size-medium wp-image-118771" /></a>
 
-連載では、仮想マシンにインストールされたUbuntuの設定について説明していますが、仮想マシンであってもなくても、ハードディスクの残り容量の不足は起こります。そこで、今回は、ハードディスクの使用している容量の確認方法と、残り容量が不足してきた場合の対処方法について紹介します。
-
+連載では、仮想マシンにインストールされたUbuntuの設定について説明していますが、仮想マシンであってもなくても、ハードディスクの残り容量の不足は起こります。そこで、[red]今回は[/red]、ハードディスクの使用している[red]容量の確認方法と、残り容量が不足してきた場合の対処方法について紹介します。[/red]
+<!--more-->
+<section class="satoub-section">
 <h1>残り容量の確認方法</h1>
 
 Windowsパソコンでは、「WindowsキーとEを同時に押す」と下の図のようにハードディスクごとの容量について表示されます（これは私が連載用に使用しているパソコンで、Cドライブ以外に3つのディスクドライブがありますが、多くの方はCドライブと光学ドライブが表示されるはずです）。
 
 <a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/11/2016-11-06_07h08_35.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/11/2016-11-06_07h08_35-480x232.png" alt="2016-11-06_07h08_35" width="480" height="232" class="aligncenter size-medium wp-image-119364" /></a>
 
-Ubuntuでも同様の表示をさせることができます。まず、デスクトップ左上のアイコンをクリックください。右に入力欄が表示されます。
+Ubuntuでも同様の表示をさせることができます。まず、[red]デスクトップ左上のアイコンをクリック[/red]ください。右に入力欄が表示されます。
 
 <a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/11/2016-11-06_06h41_16.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/11/2016-11-06_06h41_16-480x179.png" alt="2016-11-06_06h41_16" width="480" height="179" class="aligncenter size-medium wp-image-119365" /></a>
 
-そこで、呪文の言葉、"<a href="http://ubuntuapps.info/blog-entry-589.html">baobab</a>"と入力してみてください。
+そこで、呪文の言葉、[red]"<a href="http://ubuntuapps.info/blog-entry-589.html">baobab</a>"と入力してみてください。[/red]
 
-入力欄の下には、入力しているキーワードにマッチするプログラムのアイコンが表示されます。「ディスク使用量アナライザー」という円グラフのようなアイコンが表示されるので、それをクリックします。
+入力欄の下には、入力しているキーワードにマッチするプログラムのアイコンが表示されます。[red]「ディスク使用量アナライザー」という[/red]円グラフのような[red]アイコンが表示されるので、それをクリックします。[/red]
 
 <a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/11/2016-11-06_06h42_12.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/11/2016-11-06_06h42_12-480x179.png" alt="2016-11-06_06h42_12" width="480" height="179" class="aligncenter size-medium wp-image-119366" /></a>
 
-すると、以下のような画面が表示されます。
+すると、[red]以下のような画面が表示されます。[/red]
 
 <a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/11/2016-11-06_06h43_13.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/11/2016-11-06_06h43_13-480x400.png" alt="2016-11-06_06h43_13" width="480" height="400" class="aligncenter size-medium wp-image-119367" /></a>
 
-この画面は先に示したWindowsの画面と同様のものです。緑の矢印は棒グラフになっており、約4分の3を使用していることがわかります。右端には、「4.6GB/6.2GB」とあります。これは、「全ハードディスクの容量が6.2GBで、そのうち4.6GBを使用済み」ということです。鋭い方は、「仮想マシンのハードディスクは8GBのはずなのに、なぜ6.2GBしかないのだ？」と思われるかもしれません。それは、Ubuntuがハードディスクを管理するために使用する領域があるためで、ユーザーが使える容量はハードディスクの物理的な容量から管理用の領域を差し引いた範囲となります（Windows、あるいは仮想マシンでなくても同様です）。
+この画面は先に示したWindowsの画面と同様のものです。[red]緑の矢印は棒グラフになっており、[/red]約4分の3を使用していることがわかります。[red]右端には、「4.6GB/6.2GB」[/red]とあります。これは、[red]「全ハードディスクの容量が6.2GBで、そのうち4.6GBを使用済み」ということです。[/red]鋭い方は、「仮想マシンのハードディスクは8GBのはずなのに、なぜ6.2GBしかないのだ？」と思われるかもしれません。それは、Ubuntuがハードディスクを管理するために使用する領域があるためで、ユーザーが使える容量はハードディスクの物理的な容量から管理用の領域を差し引いた範囲となります（Windows、あるいは仮想マシンでなくても同様です）。
 
-「6.2GB」の右にある「＞」はリンクになっていて、それをクリックすると、詳細な内訳を見ることができます。
+[red]「6.2GB」の右にある「＞」[/red]はリンクになっていて、それ[red]をクリックすると、詳細な内訳を見ることができます。[/red]
 
 <a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/11/2016-11-06_06h52_50.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/11/2016-11-06_06h52_50-480x400.png" alt="2016-11-06_06h52_50" width="480" height="400" class="aligncenter size-medium wp-image-119368" /></a>
 
 左側の画面は、Windowsのエクスプローラーと同等で、フォルダごとのファイル数と使用している領域が確認できます。右のチャートはそれを図にしたもので、その真ん中「4.5GB」が全使用量、となります。
+</section>
 
+<section class="satoub-section">
 <h1>残り容量が少なくなったときの応急措置</h1>
 
-Windows, Ubuntuを含めあらゆるコンピュータは、利用できるハードディスクの容量が不足すると、やりくりに苦労して処理速度が遅くなり、さらには機能不全に陥ります。冒頭紹介したような警告が表示されたときのために、応急措置の手順を説明します。
+Windows, Ubuntuを含めあらゆるコンピュータは、利用できるハードディスクの容量が不足すると、やりくりに苦労して処理速度が遅くなり、さらには機能不全に陥ります。[red]冒頭紹介したような警告が表示されたときのために、応急措置の手順を説明します。[/red]
 
 <a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/11/2016-11-06_06h54_47.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/11/2016-11-06_06h54_47-480x181.png" alt="2016-11-06_06h54_47" width="480" height="181" class="aligncenter size-medium wp-image-119369" /></a>
 
-左上のアイコンをクリックして、「term」と入力、下に「端末」というアイコンが表示されたらそれをクリックします（これまでの連載で何度か登場しているので、おなじみですね）。
+[red]左上のアイコンをクリックして、「term」と入力[/red]、下に[red]「端末」[/red]というアイコンが表示されたらそれ[red]をクリックします[/red]（これまでの連載で何度か登場しているので、おなじみですね）。
 
 <a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/11/2016-11-06_07h00_33.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/11/2016-11-06_07h00_33-480x181.png" alt="2016-11-06_07h00_33" width="480" height="181" class="aligncenter size-medium wp-image-119370" /></a>
 
-「端末」が表示されたら、「sudo apt-get clean」と入力して、リターンキーを押します。
+「端末」が表示されたら、[red]「sudo apt-get clean」と入力して、リターンキーを押します。[/red]
 
 <a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/11/2016-11-06_07h01_31.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/11/2016-11-06_07h01_31-480x181.png" alt="2016-11-06_07h01_31" width="480" height="181" class="aligncenter size-medium wp-image-119371" /></a>
 
@@ -58,9 +61,9 @@ Windows, Ubuntuを含めあらゆるコンピュータは、利用できるハ�
 
 <a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/11/2016-11-06_07h02_47.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/11/2016-11-06_07h02_47-480x181.png" alt="2016-11-06_07h02_47" width="480" height="181" class="aligncenter size-medium wp-image-119373" /></a>
 
-ウィンドウ左上の×印をクリックするか、あるいは数のように「exit」と入力、リターンキーを押して「端末」を終了します。
+ウィンドウ左上の×印をクリックするか、あるいは図のように「exit」と入力、リターンキーを押して「端末」を終了します。
 
-この操作の意味について、簡単に説明します。Ubuntuでは、アプリケーションや設定について、「パッケージ」という単位で管理しています。インストールが終了したらパッケージのファイルは不要となりますが、削除されずに残っています。それをクリア（お掃除）することにより、空き容量を増やすことができるという仕組みです（したがって、この操作は連続して行っても効果がありません）。
+この操作の意味について、簡単に説明します。[red]Ubuntuでは、アプリケーションや設定について、「パッケージ」という単位で管理しています。インストールが終了したらパッケージのファイルは不要となりますが、[/red]削除されずに残っています。[red]それをクリア（お掃除）することにより、空き容量を増やすことができるという仕組みです[/red]（したがって、この操作は連続して行っても効果がありません）。
 
 空きディスク容量が本当に増えているか、再び魔法の呪文、"baobab"で確認してみましょう。
 
@@ -71,20 +74,22 @@ Windows, Ubuntuを含めあらゆるコンピュータは、利用できるハ�
 <a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/11/2016-11-06_07h04_23.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/11/2016-11-06_07h04_23-480x400.png" alt="2016-11-06_07h04_23" width="480" height="400" class="aligncenter size-medium wp-image-119375" /></a>
 
 チャートの真ん中の数値が、4.0GBとなっています。
+</section>
 
+<section class="satoub-section">
 <h1>ディスク容量が不足してきたときの対処方法</h1>
 
-「緊急措置」として、残り容量を増やす手順について説明しました。それ以外にできることとしては、以下があります。
+「緊急措置」として、残り容量を増やす手順について説明しました。[red]それ以外にできることとしては[/red]、以下があります。
 
 <ol>
-<li>不要なファイルを削除する
-<li>使用しないパッケージを削除する（Windowsにおける「プログラムのアンインストール」に相当）
-<li>仮想マシンを作り直す
-<li>Windowsパソコンに内蔵されているハードディスクでなく、外付けの装置（USBメモリ、USBハードディスク）を利用する
-<li>仮想マシンのハードディスク容量を拡張する
+<li>[red]不要なファイルを削除[/red]する
+<li>[red]使用しないパッケージを削除[/red]する（Windowsにおける「プログラムのアンインストール」に相当）
+<li>[red]仮想マシンを作り直す[/red]
+<li>Windowsパソコンに内蔵されているハードディスクでなく、[red]外付けの装置（USBメモリ、USBハードディスク）を利用[/red]する
+<li>[red]仮想マシンのハードディスク容量を拡張[/red]する
 </ol>
 
-1番目と2番目は、特に説明はいらないでしょう。3番目は新たに必要なハードディスク容量を持つ仮想マシンを作成して、そこに引っ越す（ここまでの連載は、環境設定の手順しか実行していないので、移行しなければならないデータやファイルは存在していないので、再度手順を実施すればOKです）。4番目は、書いてある通りですが、仮想マシンを使う方法と使わない方法が存在します。それについては、今後の連載で取り上げる予定です。最後の「ハードディスク容量を拡張する」ですが、実は、仮想マシンを引っ越さなくとも、そのままハードディスクの容量を増やすことが可能です。ただし、残念ながらその手順は非常に複雑で、パソコン初心者の方にはお勧めできません。腕に覚えのある方のために参考情報のリンクを紹介しておきます。
+1番目と2番目は、特に説明はいらないでしょう。3番目は新たに必要なハードディスク容量を持つ仮想マシンを作成して、そこに引っ越す（ここまでの連載は、環境設定の手順しか実行していないので、移行しなければならないデータやファイルは存在していないので、再度手順を実施すればOKです）。4番目は、書いてある通りですが、仮想マシンを使う方法と使わない方法が存在します。それについては、今後の連載で取り上げる予定です。[red]最後の「ハードディスク容量を拡張する」ですが、[/red]実は、仮想マシンを引っ越さなくとも、そのままハードディスクの容量を増やすことが可能です。ただし、残念ながらその[red]手順は非常に複雑で、パソコン初心者の方にはお勧めできません。[/red]腕に覚えのある方のために参考情報のリンクを紹介しておきます。
 
 <ul>
 <li><a href="http://infra-tech-platinum.hatenablog.jp/entry/2015/02/15/144551">VirtualBoxの仮想ディスク拡張手順(Linux版) - infra-tech-platinumの日記</a>
@@ -95,17 +100,26 @@ Windows, Ubuntuを含めあらゆるコンピュータは、利用できるハ�
 <ul>
 <li><a href="http://blogger.zatsuroku.net/2016/02/virtualboxvdihdd.html">VirtualBoxでゲストOSのHDDを拡張&#65281;VDIのリサイズ|雑録的ノート</a>
 </ul>
+</section>
 
+<section class="satoub-section">
 <h1>適正なハードディスク容量</h1>
 
-読者の方の中には、「ハードディスクの容量はどのくらいにしたら良いのだろう？」と思われた方があるかもしれません。この問いは、「冷蔵庫の容量はどのくらいあれば良いのだろうか？」という問いと本質的に同じであり、答えがありません。ハードディスクの使用量が増えるのは、主にアプリケーションのインストールと、データの作成（文書、メール、写真その他）で、使い方によります。FireFoxでインターネットをブラウズしたり、動画を視聴するだけなら、このままでも問題なく使い続けられますが、これから写真や動画のファイルを移行しようと思えば、それらの容量を確保しておかなければなりません。
+読者の方の中には、[red]「ハードディスクの容量はどのくらいにしたら良いのだろう？」と思われた方があるかもしれません。[/red]この問いは、「冷蔵庫の容量はどのくらいあれば良いのだろうか？」という問いと本質的に同じであり、答えがありません。ハードディスクの使用量が増えるのは、主にアプリケーションのインストールと、データの作成（文書、メール、写真その他）で、[red]使い方によります。[/red]FireFoxでインターネットをブラウズしたり、動画を視聴するだけなら、このままでも問題なく使い続けられますが、[red]これから写真や動画のファイルを移行しようと思えば、それらの容量を確保しておかなければなりません。[/red]
 
-「本格的にUbuntuに移行するかはまだ決めていない、とりあえずもうしばらく仮想マシンでUbuntuを使ってみよう」という方への私のお勧めは、Windowsパソコンのハードディスク空き容量の半分程度の容量を持つ仮想マシンを作成することです。ここで「半分」とするのは、仮想マシン上のUbuntuのために容量を使いすぎると、今度は母屋にあたるWindowsの空き容量が不足し、Windowsパソコン自体の動作が不安定になるからです。私のWindowsパソコンは上の画面にあるようにCドライブの空き容量が82.9GBだったので、新たに「ubuntu1604-40GB」という名前で、40GBのハードディスクを持つ仮想マシンを作成してみました。
+「本格的にUbuntuに移行するかはまだ決めていない、とりあえずもうしばらく仮想マシンでUbuntuを使ってみよう」という方への[red]私のお勧めは、Windowsパソコンのハードディスク空き容量の半分程度の容量を持つ仮想マシンを作成することです。[/red]ここで「半分」とするのは、仮想マシン上のUbuntuのために容量を使いすぎると、今度は母屋にあたるWindowsの空き容量が不足し、Windowsパソコン自体の動作が不安定になるからです。私のWindowsパソコンは上の画面にあるようにCドライブの空き容量が82.9GBだったので、新たに「ubuntu1604-40GB」という名前で、40GBのハードディスクを持つ仮想マシンを作成してみました。
+</section>
+
+<section class="satoub-section">
+<h1>仮想マシンを除去する方法</h1>
 
 最後に、仮想マシンを作り直すことにした方のため、使用しなくなった仮想マシンの削除方法を説明します（仮想マシンは、存在しているだけで大きな容量を消費するので、不要になったものは都度削除をお勧めします）。仮想マシンの削除を行うためには、まずその仮想マシンにインストールされたUbuntuをシャットダウンします。その上で、"Oracle VM VirtualBoxマネージャ"で、該当する仮想マシンを指定した上で、下図の画面にある「除去」を選択します。
 
 <a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-21_01h18_21.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/10/2016-10-21_01h18_21-480x347.png" alt="2016-10-21_01h18_21" width="480" height="347" class="aligncenter size-medium wp-image-118777" /></a>
+</section>
 
 （Haru）
+
+[contentblock id=1606-satoub-profile]
 </div>
 <div class="psb-after-excerpt"></div>
