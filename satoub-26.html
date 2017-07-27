@@ -1,63 +1,65 @@
 <link rel="stylesheet" href="/data/kojika_files/pws/1506-page-styles/ps1606_jijiblog_rensai.min.css" />
 <div class="psb-before-excerpt">————————————————————————</div>
 <div class="psb-excerpt-title"> Ubuntuでメールを使う（６）〜Thunderbirdの設定：2つ目のアカウントの追加</div>
-<div class="psb-excerpt-content">
+<section class="psb-excerpt-content">
 
 <section class="satoub-section">
-<h2>はじめに</h2>
+<h1>はじめに</h1>
 
-<a href="https://shanti-phula.net/ja/social/blog/?p=127060">前回</a>までの記事で、Thunderbirdへ電子メールアドレスを設定する手順について、説明しました。読者の方々の中には、複数の電子メールアドレスをお持ちの方もいらっしゃるかと思います。Thunderbirdでは、複数の電子メールアドレスを登録することが可能です。「個人用」と「仕事用」、「プロバイダメール」と「フリーメール」など使い分けられるのでとても便利です。今回の記事では、2つ目の電子メールアドレスを設定する手順を解説します。<a href="https://shanti-phula.net/ja/social/blog/?p=121339">「21日目 Ubuntuでメールを使う（１）〜Thunderbirdの設定：メール設定の概念解説」</a>の回で説明したように、電子メールの受信サーバには、IMAPとPOP3の2つの方式があります。以下の説明では、IMAPの電子メールアカウントの追加のための手順を示しますが、電子メールアカウントの追加の流れとしてはIMAPもPOP3も共通で、方式ごとに設定項目が若干異なっているだけです。
+<a href="https://shanti-phula.net/ja/social/blog/?p=127060">前回</a>までの記事で、Thunderbirdへ電子メールアドレスを設定する手順について、説明しました。読者の方々の中には、複数の電子メールアドレスをお持ちの方もいらっしゃるかと思います。[red]Thunderbirdでは、複数の電子メールアドレスを登録することが可能です。「個人用」と「仕事用」[/red]、「プロバイダメール」と「フリーメール」[red]など使い分けられるのでとても便利です。[/red][red]今回の記事では、2つ目の電子メールアドレスを設定する手順を解説します。[/red]<a href="https://shanti-phula.net/ja/social/blog/?p=121339">「21日目 Ubuntuでメールを使う（１）〜Thunderbirdの設定：メール設定の概念解説」</a>の回で説明したように、電子メールの受信サーバには、IMAPとPOP3の2つの方式があります。以下の説明では、IMAPの電子メールアカウントの追加のための手順を示しますが、電子メールアカウントの追加の流れとしてはIMAPもPOP3も共通で、方式ごとに設定項目が若干異なっているだけです。
+</section>
 
 <section class="satoub-section">
-<h2>「電子メールアカウント」について</h2>
+<h1>「電子メールアカウント」について</h1>
 
 「アカウント」という言葉は、これまでの記事にも登場していますが、今回は特に多く使われるので最初におさらいをしておきます。「アカウント」とはコンピュータの世界の一般的な用語で、「利用者ごとの設定情報」というような意味です。Windowsパソコンでログインするためには、ユーザ名とパスワードが必要です。それはログインするための設定情報なので、「ログインアカウント」と呼びます。TwitterやLINEなどログインして利用するサービスは、「ログインアカウント」の作成（登録）が必要です。電子メールの場合は、通常ログインすることはありませんが、その代わりに名前や電子メールアドレスなどを登録しておくことが必要です。それらの情報をまとめて「電子メールアカウント」と呼びます。
+</section>
+
+<section class="satoub-section">
+<h1>アカウントの追加手順</h1>
 
 では始めましょう。<a href="https://shanti-phula.net/ja/social/blog/?p=127060">前回</a>までの説明を実施された方は、下図のようにThunderbirdにひとつの電子メールアカウントが登録されているはずです。今回は、この状態から2つ目の電子メールアカウントを登録、利用できるようにするまでの手順を説明します。
 
 <a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2017/06/2017-06-18_15h26_56.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2017/06/2017-06-18_15h26_56-480x318.png" alt="" width="480" height="318" class="aligncenter size-medium wp-image-130115" /></a><div class="psb-after-excerpt"></div>
 
-<section class="satoub-section">
-<h1>「アカウント設定」画面を開く</h1>
-
-アカウント設定の画面は少しわかりにくいところにあります。マウスをThunderbirdのウィンドウの上部に移動すると、メニューが表示されます。「ファイル」の右隣にある「編集」というメニューをクリックすると、「編集」に関するメニューが表示され、その中から「アカウント設定」をクリックすると、下図のようにアカウント設定画面が開きます。
+<h2>「アカウント設定」画面を開く</h2>
 
 <a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2017/06/2017-06-18_15h30_35.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2017/06/2017-06-18_15h30_35-480x310.png" alt="" width="480" height="310" class="aligncenter size-medium wp-image-130116" /></a>
 
-<section class="satoub-section">
+アカウント設定の画面は少しわかりにくいところにあります。[red]マウスをThunderbirdのウィンドウの上部に移動すると、メニューが表示されます。[/red]「ファイル」の右隣にある[red]「編集」というメニューをクリック[/red]すると、「編集」に関するメニューが表示され、[red]その中から「アカウント設定」をクリックすると、下図のようにアカウント設定画面が開きます。[/red]
+
+<!--more-->
 <h2>二つ目のアカウントを追加する</h2>
 
 <a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2017/06/2017-06-18_15h35_02.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2017/06/2017-06-18_15h35_02-480x388.png" alt="" width="480" height="388" class="aligncenter size-medium wp-image-130117" /></a>
 
-上の画面の左下に「アカウント操作」というボタンがあります。それをクリックするとメニューが表示されます。その中から「メールアカウントを管理」を選択します。すると、「メールアカウント設定」のウィンドウが表示されます。
+上の画面の[red]左下に「アカウント操作」というボタンがあります。それをクリックするとメニューが表示されます。その中から「メールアカウントを管理」を選択します。すると、「メールアカウント設定」のウィンドウが表示されます。[/red]
 
 <a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2017/06/2017-06-18_15h38_20.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2017/06/2017-06-18_15h38_20-480x403.png" alt="" width="480" height="403" class="aligncenter size-medium wp-image-130118" /></a>
 
 <a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2017/06/2017-06-18_15h42_14.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2017/06/2017-06-18_15h42_14-480x403.png" alt="" width="480" height="403" class="aligncenter size-medium wp-image-130133" /></a>
 
-この画面は、一つ目の電子メールアカウントを登録した際に表示されたものと同じです。名前はすでに入っていると思いますので、「メールアドレス」と「パスワード」を記入します。値を入力したら、「OK」ボタンを押します。すると、Thunderbirdが、2つ目の電子メールアカウントを自動的に設定しようと試行錯誤します。
+この画面は、一つ目の電子メールアカウントを登録した際に表示されたものと同じです。名前はすでに入っていると思いますので、[red]「メールアドレス」と「パスワード」を記入します。[/red]値を入力したら、[red]「OK」ボタンを押します。[/red]すると、Thunderbirdが、2つ目の電子メールアカウントを自動的に設定しようと試行錯誤します。
 
-<section class="satoub-section">
 <h2>試行錯誤が失敗した場合</h2>
 
 「Thunderbirdはあなたのアカウント設定を見つけられませんでした」と報告します。
 
 <a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2017/06/2017-06-18_15h45_48.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2017/06/2017-06-18_15h45_48-480x326.png" alt="" width="480" height="326" class="aligncenter size-medium wp-image-130119" /></a>
 
-連載<a href="https://shanti-phula.net/ja/social/blog/?p=122685">「22日目 Ubuntuでメールを使う（２）」</a>を参考に、サーバ名、ユーザ名、ポートなどの値を入力、「再テスト」を押して、次の画面が表示されるまで試行錯誤を行います。
+[red]連載[/red]<a href="https://shanti-phula.net/ja/social/blog/?p=122685">「22日目 Ubuntuでメールを使う（２）」</a>[red]を参考に、サーバ名、ユーザ名、ポートなどの値を入力、「再テスト」を押して、次の画面が表示されるまで試行錯誤を行います。[/red]
 
 <a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2017/06/2017-06-18_15h53_47.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2017/06/2017-06-18_15h53_47-480x326.png" alt="" width="480" height="326" class="aligncenter size-medium wp-image-130120" /></a>
 
-内容を確認したら、右下にある「完了」ボタンを押します。すると「アカウント設定」のウィンドウが閉じて、下図のような画面になります。この画面で赤枠に囲まれた部分は、さきほど追加したIMAPの電子メールアカウントになります。元からあった一つ目の電子メールアカウントの設定が、その上に見えています。Thunderbirdの試行錯誤が成功した場合もこの画面のようになります。
+内容を確認したら、[red]右下にある「完了」ボタンを押します。[/red]すると「アカウント設定」のウィンドウが閉じて、下図のような画面になります。この画面で赤枠に囲まれた部分は、さきほど追加したIMAPの電子メールアカウントになります。元からあった一つ目の電子メールアカウントの設定が、その上に見えています。Thunderbirdの試行錯誤が成功した場合もこの画面のようになります。
 
 <a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2017/06/2017-06-18_16h03_02.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2017/06/2017-06-18_16h03_02-480x357.png" alt="" width="480" height="357" class="aligncenter size-medium wp-image-130121" /></a>
 
-さて、2つ目の電子メールアカウントの登録が完了したので、次に詳細設定について確認します。上の画面で、赤い矢印の「サーバ設定」をクリックしてみてください。
+さて、2つ目の電子メールアカウントの登録が完了したので、[red]次に詳細設定について確認します。[/red]上の画面で、[red]赤い矢印の「サーバ設定」をクリックしてみてください。[/red]
 
-<section class="satoub-section">
 <h2>IMAP電子メールアカウントの詳細設定</h2>
 
-今回、画面の例の画像をとるために、私が使っているぷららのIMAP電子メールアカウントを登録してみました（ぷららでは、<a href="https://www.plala.or.jp/support/manual/mail/plala_mail/standard/setup_imap/">オプションでIAMP方式の電子メールを利用することができます</a>）。IMAPの電子メールアカウントの詳細設定の内容は、POP3と共通するものが多いのですが、「サーバ設定」と「同期とディスク情報」は、一部異なっています。それぞれの画面例を以下に示します。いずれについても設定項目のデフォルトは標準的な内容であり、通常の利用形態であれば変更は不要と思います。
+今回、画面の例の画像をとるために、私が使っているぷららのIMAP電子メールアカウントを登録してみました（ぷららでは、<a href="https://www.plala.or.jp/support/manual/mail/plala_mail/standard/setup_imap/">オプションでIAMP方式の電子メールを利用することができます</a>）。IMAPの[red]電子メールアカウントの詳細設定の内容は[/red]、POP3と共通するものが多いのですが、「サーバ設定」と「同期とディスク情報」は、一部異なっています。それぞれの画面例を以下に示します。いずれについても設定項目のデフォルトは標準的な内容であり、[red]通常の利用形態であれば変更は不要と思います。[/red]
 
 （１）サーバ設定
 
@@ -69,20 +71,24 @@
 
 <a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2017/06/2017-06-18_16h10_15.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2017/06/2017-06-18_16h10_15-480x376.png" alt="" width="480" height="376" class="aligncenter size-medium wp-image-130123" /></a>
 
-<section class="satoub-section">
 <h2>送信サーバの設定</h2>
 
-ここで、詳細設定の画面を見ると、左下に「送信サーバの設定」があります。電子メールアカウントは、2個（2セット）あるのに「送信サーバの設定」はひとつ（一行）しかありません。送信サーバごとの設定は、設定画面の右に追加されるようになっており、2行登録されています。その各行が、左にある電子メールアカウント設定と対応しています。この画面では、一行目の「so-net」の行が選択されています。そこで、画面右下には、「so-net」用の送信サーバの設定内容が表示されています。パスワードを変更した場合等、変更が必要になったら、該当する行を選択して、右の「編集」を押すと値が表示できます。
+ここで、詳細設定の画面を見ると、[red]左下に「送信サーバの設定」があります。[/red]電子メールアカウントは、2個（2セット）あるのに「送信サーバの設定」はひとつ（一行）しかありません。[red]送信サーバごとの設定は、設定画面の右に[/red]追加されるようになっており、[red]2行登録されています。[/red]その各行が、左にある電子メールアカウント設定と対応しています。この画面では、一行目の「so-net」の行が選択されています。そこで、画面右下には、「so-net」用の送信サーバの設定内容が表示されています。パスワードを変更した場合等、変更が必要になったら、該当する行を選択して、右の「編集」を押すと値が表示できます。
 
 <a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2017/06/2017-06-18_17h50_16.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2017/06/2017-06-18_17h50_16-480x357.png" alt="" width="480" height="357" class="aligncenter size-medium wp-image-130145" /></a>
 
 送信サーバの設定の画面にある項目は、メールの送信に最低限必要な項目であって、利用者が「オプション」的に変更したり、調整したりする項目はありません。登録されている内容は、Thunderbirdが動作を確認済みのはずなので、ここでは、電子メールアドレスごとに「受信サーバと送信サーバが、（同じプロバイダに）対応しているか」を確認しておくだけで結構です。上の画面を例に説明すると、左上の(1)はso-netのサーバとなっています。画面の右半分を見ると、(1)がついた項目が2つありますが、いずれもso-netとなっており、対応が取れていることがわかります。
 
-送信サーバの設定の確認が終わったら、画面右下の「OK」のボタンを押します。すると、電子メールを読むための画面に戻ります。so-netとplalaの2つの電子メールアカウントについて、読みたいほうをクリックすると、選択されたアドレス宛のメールが表示されます。
+</section>
+
+<section class="satoub-section">
+<h1>新しく追加したメールアドレスを利用するには</h1>
+
+[red]送信サーバの設定の確認が終わったら、画面右下の「OK」のボタンを押します。[/red]すると、[red]電子メールを読むための画面に戻ります。[/red][red]so-netとplalaの2つの電子メールアカウントについて、読みたいほうをクリックすると、選択されたアドレス宛のメールが表示されます。[/red]
 
 <a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2017/06/2017-06-18_17h46_18.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2017/06/2017-06-18_17h46_18.png" alt="" width="350" height="437" class="aligncenter size-full wp-image-130147" /></a>
 
-受信については、利用したいほうを選択するとして、送信に関する設定はどう切り替えるのだろうと思われた方があるかもしれません。それについては、Thunderbirdが自動的に切り替えてくるので何もしなくて構いません。例えばso-netのほうのメールを読んでいて返信や新規メールを作成すると、so-net用の送信サーバの設定が利用されるようになっています。plalaの場合も同様です。
+受信については、利用したいほうを選択するとして、[red]送信に関する設定は[/red]どう切り替えるのだろうと思われた方があるかもしれません。それについては、Thunderbirdが[red]自動的に切り替えてくるので何もしなくて構いません。例えばso-netのほうのメールを読んでいて返信や新規メールを作成すると、so-net用の送信サーバの設定が利用されるようになっています。[/red]plalaの場合も同様です。
 
 （Haru）
 </section>
