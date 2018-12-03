@@ -35,7 +35,7 @@
 <section class="satoub-section">
 <h1>二人目の方へのご回答</h1>
 <h2>Ubuntuの種類</h2>
-　マイクロソフトWindowsの場合は、Windows 7以降、Windows 8, （Windows 9を飛ばして）Windows 10と基本機能が見直されたバージョンが公開（コンピュータ業界ではよく「リリース」と呼ばれます）されています。Ubuntuについては、以下のようにバージョンが更新されています。
+　マイクロソフトWindowsの場合は、Windows 7以降、Windows 8, （Windows 9はないので）Windows 10と基本機能が見直されたバージョンが公開（コンピュータ業界ではよく「リリース」と呼ばれます）されています。Ubuntuについては、以下のようにバージョンが更新されています。
 
 <div align="center">
 <table border="1" cellpadding="5">
@@ -110,7 +110,7 @@
  <li>より新しい規格、より多くのハードウェア（たとえばビデオカード）に対応し、その結果より多くの環境で動作するようになっている
 </ul>
 
-　いずれも魅力ですが、脱マイクロソフトを目指し、Ubuntuに入門するのであれば、最新のLTSがお勧めです。
+　いずれも魅力ですが、脱マイクロソフトを目指し、Ubuntuに入門するのであれば、「その時点での最新のLTSの日本語 Remix」が良いでしょう。この記事を書いている２０１８年１２月現在では、「18.04 LTS 日本語 Remix」となります。
 
 <h2>Ubuntu 18.04 LTSについて</h2>
 　Ubuntu 18.04 LTS 日本語 Remix については、私自身まだ体験していません。インストールから始め、新機能等について体験してみて、里山Ubuntu通信でお伝えしていきたいと思います。
@@ -128,17 +128,71 @@
 
 　この内容は、やや控えめな気がします。これから新しいパソコンを購入する場合、最初の３項目を満たさないものは、まずないでしょう。なので、あまり心配いらないと思いますが、メモリについては、（Ubuntu用に限らず）最低でも4GB、できれば8GB以上が望ましいです。
 
+　現在お使いのパソコンについて、上の条件を満たしているかどうか確認するための方法を説明します。「CPUとメモリー」については、コントールパネルの「システム」で確認することができます。(1) コントールパネル、(2) システムとセキュリティ、(3) システム、として選択します。
+
+<a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2018/11/2018-12-02_14h13_57.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2018/11/2018-12-02_14h13_57-480x335.png" alt="" width="480" height="335" class="aligncenter size-medium wp-image-181961" /></a>
+
+「プロセッサ」の部分がCPUで、Hzの値が大きいほど高速となります。上の例では、2.5GHzで2GHzより大きいのでOKです。「実装メモリ」の部分がシステムメモリ（通常は単にメモリと呼びます）で、値が大きいほど処理能力が高くなります。上の例では、8GBで2GBより大きいのでOKです。最後の「ハードディスクの空き容量」を確認するためには、キーボードの左下のほうに「Windowsキー」と「E」のキーを同時に押してみてください（あるいは、エクスプローラで、「コンピュータ」をクリックください）。次のような画面が表示されます。
+
+<a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2018/11/2018-12-02_14h20_22.png"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2018/11/2018-12-02_14h20_22-480x294.png" alt="" width="480" height="294" class="aligncenter size-medium wp-image-181963" /></a>
+
+「空き容量87.3GB/215GB」の意味は、「全部で215GBあって、そのうち使われていない領域が87.3GBある」という意味です。棒グラフのようにどの程度使われているか見えるようになっています。ここで２つの数値のどちらを参照するは、Ubuntuをどのようにインストールするかによります。仮想マシンとしてインストールする場合には、空き容量である87.3GBが十分かどうかを見ます。一方、仮想マシンとしてではなく、Windowsを上書きする形でUbuntuをインストールする場合には、215GBのほうの値を見ます。なぜかというと、「今使用されている領域は、Windowsによって管理されているものなので、Windowsを上書きする場合、不要となる」からです。
+
 <h2>パソコン本体を買い換えずに安全にUbuntuを使う方法</h2>
-　ノート型PCを買い換える際には、もう一つアドバイスがあります。それは「ハードディスクの交換が容易なもの」を選ぶことです。ハードディスクとは、パソコンの内部記憶装置です。ハードディスクの外観および内部構造については、是非<a href="https://www.pc-master.jp/words/hdd.html">こちらのサイト</a>の内容でご確認ください。ハードディスクは、パソコンの部品として規格が定められており、家電量販店等で安価に入手することができます。
+　ノート型PCを買い換える際には、一つアドバイスがあります。それは「ハードディスクの交換が容易なもの」を選ぶことです。ハードディスクとは、パソコンの内部記憶装置です。ハードディスクの外観および内部構造については、是非<a href="https://www.pc-master.jp/words/hdd.html">こちらのサイト</a>の内容でご確認ください。
 
-　何故、ハードディスクの交換が容易なものを勧めるかというと、Windows用、Ubuntu用とハードディスクを取り替えて、利用することができるからです。ハードディスクには、WindowsやUbuntuなどオペレーティングシステムと呼ばれるソフトウェア、ブラウザや表計算ソフトなどのアプリケーション、利用者の作成したファイルなどが保管されています。今、お使いのパソコンのハードディスクを取り外し、新しく買ってきたハードディスクを取り付け、Ubuntuをインストールしたら、どんな失敗をしたとしてもWindowsの環境を破壊することがなく（笑）、Ubuntuに挫折したらWindowsの生活に戻ることができます（戻って欲しくありませんが）。
+　何故、ハードディスクの交換が容易なものを勧めるかというと、Windows用、Ubuntu用とハードディスクを取り替えて、利用することができるからです。ハードディスクには、WindowsやUbuntuなどオペレーティングシステムと呼ばれるソフトウェア、ブラウザや表計算ソフトなどのアプリケーション、利用者の作成したファイルなどが保管されています。今、お使いのパソコンのハードディスクを取り外し、新しく買ってきたハードディスクを取り付け、Ubuntuをインストールしたら、どんな失敗をしたとしてもWindowsの環境を破壊することがなく（笑）、Ubuntuに挫折したらWindowsの生活に戻ることができます（戻って欲しくはありませんが）。
 
-　ハードディスクは部品そのものは規格化されており、規格が正しければどのメーカのものでも使えますが、取り付け方は、パソコンごとに異なります。デスクトップ型のパソコンは、最近はドライバなしで取り外し、取り付けることができるのが当たり前ですが、ノート型のパソコンは、同じメーカであっても機種により異なります。中には、本体を分解して、キーボードを取り外さないといけないものがあり、不慣れな場合、部品を破損したり、起動しなくなったりする恐れがあります。私が使用しているIBMの製品は、本体をひっくり返すと、プラスドライバだけで簡単に脱着が可能です。
+　蛍光灯や電球は種類さえ合っていれば、どこのメーカのものでも使えます。それは大きさや流れる電流などについて、決まり事（規格）に基づいて作られているからです。パソコン用のハードディスクも同様で、規格に合ったものであれば、国やメーカ関係なく使うことができます。ただ、ハードディスクの取り外し方や取り付け方は、電球ほどわかりやすくなく、パソコンの機種ごとに異なります。ここでは、私が使用しているIBMのノート型パソコン、ThinkPad X220のハードディスクの取り外し方を例としてご紹介します。
+
+<a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2018/12/IMG_5071.jpg"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2018/12/IMG_5071-480x360.jpg" alt="" width="480" height="360" class="aligncenter size-medium wp-image-181915" /></a>
+
+やや細めのプラスドライバーを一本用意します。道具はこれだけです。ハードディスクを取り出す前にWindowsをシャットダウンしたら、ひっくり返します。
+
+<a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2018/12/IMG_E5072.jpg"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2018/12/IMG_E5072-480x360.jpg" alt="" width="480" height="360" class="aligncenter size-medium wp-image-181916" /></a>
+
+左端と中央下にネジで留められた蓋のようなものが見えます。左側がハードディスクで、中央はメモリです。
+
+<a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2018/12/IMG_5073.jpg"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2018/12/IMG_5073-360x480.jpg" alt="" width="360" height="480" class="aligncenter size-medium wp-image-181917" /></a>
+
+この一本のネジがハードディスクを収容している部分のカバーを固定しています。
+
+<a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2018/12/IMG_5074.jpg"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2018/12/IMG_5074-360x480.jpg" alt="" width="360" height="480" class="aligncenter size-medium wp-image-181918" /></a>
+
+カバーが外れました。ちょっとわかりにくいのですが、カバーで塞がれていた部分に、ハードディスクを引っ張り出すためのベロがあるので、それを引っ張り出します。
+
+<a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2018/12/IMG_5075.jpg"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2018/12/IMG_5075-480x360.jpg" alt="" width="480" height="360" class="aligncenter size-medium wp-image-181919" /></a>
+
+ベロを持って、ハードディスクを引き抜きます。
+
+<a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2018/12/IMG_5076.jpg"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2018/12/IMG_5076-480x360.jpg" alt="" width="480" height="360" class="aligncenter size-medium wp-image-181920" /></a>
+
+全部出てきました。ひっくり返してみましょう。
+
+<a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2018/12/IMG_5077.jpg"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2018/12/IMG_5077-480x360.jpg" alt="" width="480" height="360" class="aligncenter size-medium wp-image-181921" /></a>
+
+左右にゴムで出来たガードがはめ込んであるのを外します。このガードは、ハードディスクを衝撃から保護するためのものです。
+
+<a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2018/12/IMG_5078.jpg"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2018/12/IMG_5078-480x360.jpg" alt="" width="480" height="360" class="aligncenter size-medium wp-image-181922" /></a>
+
+左右に２個ずつあるネジを外すと、ハードディスクを載せていた台を外せます。ハードディスク、丸裸状態です。
+
+<a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2018/12/IMG_5079.jpg"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2018/12/IMG_5079-480x360.jpg" alt="" width="480" height="360" class="aligncenter size-medium wp-image-181923" /></a>
+
+裏はどうなっているか、ひっくり返してみましょう。
+
+<a href="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2018/12/IMG_5084.jpg"><img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2018/12/IMG_5084-480x360.jpg" alt="" width="480" height="360" class="aligncenter size-medium wp-image-181924" /></a>
+
+こんなふうになっています（ちょっとグロい？）。丸く見える部分が、ハードディスクに入っている「お皿」の中心です。
+
+　取り付け方は、上の手順を逆にするだけです。IBM/Lenovoのノート型パソコンは、このようにハードディスクの交換が容易ですが、これは例外的です。多くのメーカのノート型パソコンは、１０本以上ネジを外さないといけなかったり、中には「キーボードを外さないとハードディスクが取り出せない」ものもあります。そうした機種では、ハードディスクを取り付けたのに起動しなくなったり、本体の蓋が締められなくなったりするリスクがあります。そうなると、メーカに修理を依頼するしかなくなります。内容によっては１０万円程度の費用、数週間の期間がかかり、かつお使いのハードディスクは初期化されてしまいます（修理を受け付ける際の条件となっています）。私からの助言としては、「難しいかな」と思ったら、無理をしないことです。なお、デスクトップ型については、使用されるハードディスクがノート型より大きい、ハードディスクは専用のケーブルでパソコンの基板に接続されているという点を除いては、ノート型と同じです。
+
+　ここで、読者の方にひとつクイズを出します。こうして、ハードディスクを取り外した状態で、パソコンの電源を入れたらどうなると思いますか？答えは、「エラー画面が表示される」です。パソコンは、電源を入れたら、Windows, Ubuntuその他のOSと呼ばれるソフトウェアを実行しようとしますが、その内容はどこにあるかというとハードディスクの中にあります。なので、ハードディスクを外した状態だと、「何も実行できないよ」と文句を言うわけです。
 
 <h2>パソコンの購入前にUbuntuがインストールできるか確認する方法</h2>
-　Ubuntuを始めてみようと思って買ったパソコンにUbuntuがインストールできないと悲しいですね。インターネットで、「購入候補のパソコンの機種名　Linux　インストール」のようなキーワードで検索してみてください。その機種にLinuxをインストールして利用しているという情報があれば安心ですし、インストールした際に苦労したことなどの情報が見つかれば参考になります。何もなければ・・・、ちょっと苦労するかもしれません（君子危うきに近寄らず）。
+　現在お使いのパソコンにUbuntuをインストールする場合、Ubuntuが使えるかどうかを<a href="https://shanti-phula.net/ja/social/blog/?p=113668">「６日目　Ubuntuを体験する 〜 最初に知るべきことは終わり方」</a>の記事のようにして確認することができます。しかし、この方法はこれから買うパソコンでは使えません。Ubuntuを始めてみようと思って買ったパソコンにUbuntuがインストールできないと悲しいですね。そこで、こんな方法があります。インターネットで、「購入候補のパソコンの機種名　Linux　インストール」のようなキーワードで検索してみてください。その機種にLinuxをインストールして利用しているという情報があれば安心ですし、インストールした際に苦労したことなどの情報が見つかれば参考になります。何もなければ・・・、ちょっと苦労するかもしれません（君子危うきに近寄らず）。
 
-　ハードディスクの交換が容易かどうかについては、同様に「購入候補、あるいはお使いのパソコンの機種名　ハードディスク　換装」のようなキーワードで検索すると情報が得られます。
+　ハードディスクの交換が容易かどうかについても、同様に「購入候補、あるいはお使いのパソコンの機種名　ハードディスク　換装」のようなキーワードで検索してみてください。
 
 <h1>今後の通信について</h1>
 　私はUbuntuの開発者ではありません。Ubuntuを含むLinuxのインストールと利用経験はありますが、利用時間としては圧倒的にWindowsが長くなります。ただ、パソコンの利用経験が長いこともあり、できることとできないこと、あることを試してみたらどんな結果がでるか、などがなんとなくわかります。里山Ubuntu通信では、うまく行ったときは「こちらは大丈夫ですよ」、失敗したら「これは駄目でした」のように読者の皆さんの道先案内をしたいと思います。わからないこと、試して欲しいことなどありましたら、お気軽にお知らせください。どうぞよろしくお願い致します。
